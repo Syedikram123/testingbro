@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Modern Dresses</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--red:#042d37;--light:#fff;}
+*{box-sizing:border-box}
+body{margin:0;font-family:Poppins,system-ui;background:#E9FFF2;color:#222;display:flex;justify-content:center}
+.container{max-width:420px;width:100%;padding:20px;text-align:center}
+.logo{width:150px;height:150px;border-radius:16px;margin:10px auto 6px;background:#fff;box-shadow:0 6px 16px rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;color:var(--red);font-weight:800}
+.title{font-family:'Playfair Display',serif;color:var(--red);font-size:35px;letter-spacing:1px}
+.subtitle{color:var(--red);margin-top:0px;font-weight:600}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.btn{
+  background: var(--red);
+  color: #F4b23c;
+  border: none;
+  border-radius: 16px;
+  padding: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(179,0,0,.25);
+  cursor: pointer;
+
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.btn.alt{
+  background:#F4B23C;
+  color:#042d37;
+}
+
+.footer{margin-top:18px;color:#042d37;font-size:15px}
+#about{display:none;margin-top:14px;background:#fafafa;border-radius:12px;padding:12px}
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="assets/logo1.jpg" class="logo" alt="Shalimar Logo">
+  <div class="title">Gojo Saree Centre</div>
+  <div class="subtitle">- Always Best -</div>
+
+  <div class="grid">
+    <button class="btn" onclick="toggleAbout()">About Us</button>
+    <a class="btn alt" href="https://maps.app.goo.gl/C3wwxfSCCETo8NrU6" target="_blank">Location</a>
+    <a class="btn" href="tel:+919448422786">Contact 1</a>
+    <a class="btn alt" href="tel:+917204919857">Contact 2</a>
+	<a class="btn" href="https://www.instagram.com/moderndressesbidar/" target="_blank">Instagram</a>
+	<a class="btn" href="tel:+919448422786">Contact 1</a>
+    <a class="btn alt" href="tel:+917204919857">Contact 2</a>
+ </div>
+
+  <div id="about">
+  <p>
+    <strong>Modern Dresses</strong> is a premium garment store in Bidar (585401), offering the best quality clothing for men, women, and kids. We are committed to style, comfort, and value for every customer.<br>
+    <strong>GSTIN:</strong> 29ADVPM6896Q1ZV
+  </p>
+</div>
+
+
+  <div class="footer">Thank You - Visit Again</div>
+</div>
+<script>
+function toggleAbout(){
+  const a=document.getElementById('about');
+  a.style.display=a.style.display==='block'?'none':'block';
+}
+</script>
+</body>
+</html>
